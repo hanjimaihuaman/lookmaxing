@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ultimate Looksmaxing Guide - Transform into your best self with comprehensive advice on fitness, skincare, fashion, and more.">
+    <title>Ultimate Looksmaxing Guide | Transform Into Your Best Self</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#064E3B'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+        }
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-secondary font-bold text-xl">Looksmax</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-primary transition-colors">Benefits</a>
+                    <a href="#resources" class="text-gray-600 hover:text-primary transition-colors">Resources</a>
+                    <a href="#purchase" class="text-gray-600 hover:text-primary transition-colors">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 md:pt-32 pb-16 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left fade-in">
+                    <h1 class="text-5xl md:text-6xl font-bold text-secondary leading-tight mb-6">
+                        Transform Into Your<br>
+                        <span class="text-primary">Best Self</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Unlock the ultimate guide to fitness, grooming, style, and confidence — all in one digital book.
+                    </p>
+                    <a href="https://rzp.io/rzp/y8O1aevo" target="_blank" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                        Get Instant Access - Just ₹29
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">Limited Time Offer - Regular Price ₹499</p>
+                </div>
+                <div class="md:w-1/2 fade-in">
+                    <img src="./images/looksmaxing-guide.jpg" alt="Ultimate Looksmaxing Guide Cover" class="w-64 h-64 object-cover mx-auto rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">What's Inside the Ultimate Looksmaxing Guide?</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    This eBook is designed specifically for young men aged 14–25 looking to improve their physical appearance, grooming, style, and confidence. It's a complete self-improvement manual that breaks down everything from fitness and facial aesthetics to mental toughness. No fluff — just actionable advice backed by science and real results.
+                </p>
+                <p class="text-lg text-gray-600 mb-8">
+                    Whether you're a beginner or already working on your glow-up, this guide provides everything you need to become your best self in 2025.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-secondary mb-4">What's Inside:</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li>✓ Complete Fitness & Nutrition Plans</li>
+                            <li>✓ Advanced Skincare Routines</li>
+                            <li>✓ Style & Fashion Guidelines</li>
+                            <li>✓ Mental Health & Confidence Tips</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-secondary mb-4">Why Choose This Guide:</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li>✓ Science-Backed Methods</li>
+                            <li>✓ Practical, Actionable Steps</li>
+                            <li>✓ Regular Updates</li>
+                            <li>✓ Community Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-12 fade-in">Key Benefits</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 fade-in">
+                    <div class="text-primary mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Build Muscle & Lose Fat</h3>
+                    <p class="text-gray-600">Expert workout routines and nutrition plans for optimal body composition.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 fade-in">
+                    <div class="text-primary mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Perfect Skincare</h3>
+                    <p class="text-gray-600">Advanced routines for clear, healthy, and glowing skin.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 fade-in">
+                    <div class="text-primary mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Master Personal Style</h3>
+                    <p class="text-gray-600">Develop your unique style and build the perfect wardrobe.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 fade-in">
+                    <div class="text-primary mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Facial Aesthetics</h3>
+                    <p class="text-gray-600">Natural techniques to enhance your facial features.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 fade-in">
+                    <div class="text-primary mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mental Toughness</h3>
+                    <p class="text-gray-600">Build unshakeable confidence and resilience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary mb-12 fade-in">Bonus Video Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto fade-in">
+                <a href="https://youtu.be/M4K0s792wAU" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">💪 Build Muscle & Burn Fat</h3>
+                    <p class="text-gray-600 mt-2">Learn how to transform your body the right way.</p>
+                </a>
+                <a href="https://youtu.be/XaSmfUikE8g" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">🧴 Winter Skincare Routine</h3>
+                    <p class="text-gray-600 mt-2">Simple routine to get clear, healthy skin this winter.</p>
+                </a>
+                <a href="https://youtu.be/lw4SkPn17RY" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">💇‍♂️ Haircare Routine for Men</h3>
+                    <p class="text-gray-600 mt-2">Stop hair damage, frizz, and get perfect hair.</p>
+                </a>
+                <a href="https://youtu.be/atX1kui6snI" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">👔 Men's Fashion Rules</h3>
+                    <p class="text-gray-600 mt-2">Style tips that actually work for every guy.</p>
+                </a>
+                <a href="https://youtu.be/AntUYmtHKrM" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">😎 Model-Tier Facial Aesthetics</h3>
+                    <p class="text-gray-600 mt-2">Tips to sculpt your face and glow up naturally.</p>
+                </a>
+                <a href="https://youtu.be/hUA_k76x2uE" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">🧠 Mental Toughness</h3>
+                    <p class="text-gray-600 mt-2">Build the mindset of high-value men.</p>
+                </a>
+                <a href="https://youtu.be/nC71JSs7Czs" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">🧬 Fix Facial Asymmetry</h3>
+                    <p class="text-gray-600 mt-2">Balance your facial structure naturally.</p>
+                </a>
+                <a href="https://youtu.be/ypRfcjAy1As" target="_blank" class="bg-green-100 hover:bg-green-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <h3 class="font-semibold text-lg flex items-center gap-2">🔥 Looksmax for Gen Z (14–25)</h3>
+                    <p class="text-gray-600 mt-2">The ultimate guide to glowing up in 2025.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-2xl mx-auto fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">About the Author</h2>
+                <p class="text-lg text-gray-600">
+                    Written by Aman Seth, a passionate self-improvement guide who helps Gen Z transform into their best selves.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section id="purchase" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6 fade-in">Start Your Glow-up Today</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto fade-in">
+                Join thousands of others who have already transformed their lives with this comprehensive guide.
+            </p>
+            <div class="space-y-4 fade-in">
+                <a href="https://rzp.io/rzp/y8O1aevo" target="_blank" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                    Get Instant Access - Just ₹29
+                </a>
+                <p class="text-sm text-gray-500">Limited Time Offer - Regular Price ₹499</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <a href="#hero" class="inline-block text-white hover:text-primary transition-colors mb-4">
+                <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                </svg>
+                Back to Top
+            </a>
+            <p class="mt-4">&copy; 2024 Ultimate Looksmaxing Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in animations on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html> 
